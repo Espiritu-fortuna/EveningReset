@@ -204,9 +204,11 @@
 
   window.ROUTINE_CONFIG = {
     appName: 'EveningReset',
+    brandLabel: '☾ EVENING RESET',
     shortName: 'Evening',
     themeColor: '#05070b',
     subtitle: 'Same evening every day',
+    headerSubtitle: 'Daily evening reset',
     introLeadInSec: 5,
     announcementDelaySec: 2,
     defaultGlobalPace: 1,
