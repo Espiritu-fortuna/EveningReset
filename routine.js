@@ -6,10 +6,11 @@
   const rest = (durationSec, extra = {}) => ({ type: 'rest', durationSec, ...extra });
 
   const warmups = [
-    { key: 'marching', phase: 'warmup', name: 'Light Marching in Place', cue: 'Raise tissue temperature without impact.', manualEligible: false, segments: [timed('Marching', 60, { announce: 'Warm-up. Light marching in place.' })] },
-    { key: 'breathing', phase: 'warmup', name: 'Diaphragmatic Breathing', cue: 'Four seconds in, six seconds out, belly expands.', manualEligible: false, segments: [breath('Eight breath cycles', 8, 4, 6, { announce: 'Diaphragmatic breathing. Eight slow breaths.' })] },
-    { key: 'chin-tucks', phase: 'warmup', name: 'Chin Tucks', cue: 'Slide the head back, no tilting, three-second hold.', manualEligible: false, segments: [count('Ten reps', 10, 4.8, { announce: 'Chin tucks.', holdSec: 3 })] },
-    { key: 'shoulder-rolls', phase: 'warmup', name: 'Shoulder Rolls', cue: 'Ten forward, ten backward.', manualEligible: false, segments: [count('Forward', 10, 1.3, { announce: 'Shoulder rolls forward.' }), count('Backward', 10, 1.3, { announce: 'Shoulder rolls backward.' })] }
+    { key: 'marching', phase: 'warmup', name: 'Light Marching in Place', cue: 'Raise tissue temperature without impact.', manualEligible: false, segments: [timed('Marching · 60 sec', 60, { announce: 'Warm-up. Light marching in place.' })] },
+    { key: 'breathing', phase: 'warmup', name: 'Diaphragmatic Breathing', cue: 'Four seconds in, six seconds out, belly expands.', manualEligible: false, segments: [breath('8 breath cycles', 8, 4, 6, { announce: 'Diaphragmatic breathing. Eight slow breaths.' })] },
+    { key: 'chin-tucks', phase: 'warmup', name: 'Chin Tucks', cue: 'Slide the head back, no tilting, three-second hold.', manualEligible: false, segments: [count('10 reps', 10, 4.8, { announce: 'Chin tucks.', holdSec: 3 })] },
+    { key: 'shoulder-rolls-forward', phase: 'warmup', name: 'Shoulder Rolls', cue: 'Controlled forward circles.', manualEligible: false, segments: [count('Forward · 10 reps', 10, 1.3, { announce: 'Shoulder rolls forward.' })] },
+    { key: 'shoulder-rolls-backward', phase: 'warmup', name: 'Shoulder Rolls', cue: 'Reverse with the same control.', manualEligible: false, segments: [count('Backward · 10 reps', 10, 1.3, { announce: 'Shoulder rolls backward.' })] }
   ];
 
   const exercises = [
