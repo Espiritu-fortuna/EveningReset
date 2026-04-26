@@ -22,9 +22,7 @@
       manualEligible: true,
       segments: [
         count('Set 1', 10, 12.2, { announce: 'Deep cervical flexor hold. Set 1. Ten second holds.', holdSec: 10 }),
-        rest(60, { announce: 'Rest. Set 2 is next.' }),
         count('Set 2', 10, 12.2, { announce: 'Deep cervical flexor hold. Set 2.', holdSec: 10 }),
-        rest(60, { announce: 'Rest. Set 3 is next.' }),
         count('Set 3', 10, 12.2, { announce: 'Deep cervical flexor hold. Set 3.', holdSec: 10 })
       ]
     },
@@ -36,13 +34,9 @@
       manualEligible: true,
       segments: [
         hold('Right side, set 1', 30, { announce: 'Upper trapezius stretch. Right side, set 1.' }),
-        rest(60, { announce: 'Rest. Left side, set 1 is next.' }),
         hold('Left side, set 1', 30, { announce: 'Upper trapezius stretch. Left side, set 1.' }),
-        rest(60, { announce: 'Rest. Right side, set 2 is next.' }),
         hold('Right side, set 2', 30, { announce: 'Upper trapezius stretch. Right side, set 2.' }),
-        rest(60, { announce: 'Rest. Left side, set 2 is next.' }),
         hold('Left side, set 2', 30, { announce: 'Upper trapezius stretch. Left side, set 2.' }),
-        rest(60, { announce: 'Rest. Extra left-side set is next.' }),
         hold('Left side, extra set', 30, { announce: 'Upper trapezius stretch. Extra set on the left side.' })
       ]
     },
@@ -54,13 +48,9 @@
       manualEligible: true,
       segments: [
         hold('Right side, set 1', 30, { announce: 'Levator scapulae stretch. Right side, set 1.' }),
-        rest(60, { announce: 'Rest. Left side, set 1 is next.' }),
         hold('Left side, set 1', 30, { announce: 'Levator scapulae stretch. Left side, set 1.' }),
-        rest(60, { announce: 'Rest. Right side, set 2 is next.' }),
         hold('Right side, set 2', 30, { announce: 'Levator scapulae stretch. Right side, set 2.' }),
-        rest(60, { announce: 'Rest. Left side, set 2 is next.' }),
         hold('Left side, set 2', 30, { announce: 'Levator scapulae stretch. Left side, set 2.' }),
-        rest(60, { announce: 'Rest. Right side, set 3 is next.' }),
         hold('Right side, set 3', 30, { announce: 'Levator scapulae stretch. Right side, set 3.' })
       ]
     },
@@ -72,9 +62,7 @@
       manualEligible: true,
       segments: [
         count('Lower thoracic level', 8, 6.6, { announce: 'Thoracic extension over foam roller. Lower thoracic level.', holdSec: 5 }),
-        rest(60, { announce: 'Rest. Mid thoracic level is next.' }),
         count('Mid thoracic level', 8, 6.6, { announce: 'Thoracic extension. Mid thoracic level.', holdSec: 5 }),
-        rest(60, { announce: 'Rest. Upper thoracic level is next.' }),
         count('Upper thoracic level', 8, 6.6, { announce: 'Thoracic extension. Upper thoracic level.', holdSec: 5 })
       ]
     },
@@ -94,11 +82,8 @@
       manualEligible: true,
       segments: [
         count('Right side, set 1', 8, 4.4, { announce: 'Open book rotation. Right side, set 1.', holdSec: 2 }),
-        rest(60, { announce: 'Rest. Left side, set 1 is next.' }),
         count('Left side, set 1', 8, 4.4, { announce: 'Open book rotation. Left side, set 1.', holdSec: 2 }),
-        rest(60, { announce: 'Rest. Right side, set 2 is next.' }),
         count('Right side, set 2', 8, 4.4, { announce: 'Open book rotation. Right side, set 2.', holdSec: 2 }),
-        rest(60, { announce: 'Rest. Left side, set 2 is next.' }),
         count('Left side, set 2', 8, 4.4, { announce: 'Open book rotation. Left side, set 2.', holdSec: 2 })
       ]
     },
@@ -110,11 +95,8 @@
       manualEligible: true,
       segments: [
         hold('Right side, set 1', 45, { announce: 'Half-kneeling hip flexor stretch. Right side, set 1.' }),
-        rest(60, { announce: 'Rest. Left side, set 1 is next.' }),
         hold('Left side, set 1', 45, { announce: 'Half-kneeling hip flexor stretch. Left side, set 1.' }),
-        rest(60, { announce: 'Rest. Right side, set 2 is next.' }),
         hold('Right side, set 2', 45, { announce: 'Half-kneeling hip flexor stretch. Right side, set 2.' }),
-        rest(60, { announce: 'Rest. Left side, set 2 is next.' }),
         hold('Left side, set 2', 45, { announce: 'Half-kneeling hip flexor stretch. Left side, set 2.' })
       ]
     },
@@ -126,9 +108,7 @@
       manualEligible: true,
       segments: [
         count('Set 1', 12, 4.9, { announce: 'Glute bridge with posterior pelvic tilt. Set 1.', holdSec: 3 }),
-        rest(60, { announce: 'Rest. Set 2 is next.' }),
         count('Set 2', 12, 4.9, { announce: 'Glute bridge. Set 2.', holdSec: 3 }),
-        rest(60, { announce: 'Rest. Set 3 is next.' }),
         count('Set 3', 12, 4.9, { announce: 'Glute bridge. Set 3.', holdSec: 3 })
       ]
     },
@@ -140,9 +120,7 @@
       manualEligible: true,
       segments: [
         count('Set 1', 8, 3.8, { announce: 'Dead bug. Set 1. Eight reps per side, alternating.', alternatingSides: true }),
-        rest(60, { announce: 'Rest. Set 2 is next.' }),
         count('Set 2', 8, 3.8, { announce: 'Dead bug. Set 2. Eight reps per side, alternating.', alternatingSides: true }),
-        rest(60, { announce: 'Rest. Set 3 is next.' }),
         count('Set 3', 8, 3.8, { announce: 'Dead bug. Set 3. Eight reps per side, alternating.', alternatingSides: true })
       ]
     },
@@ -154,9 +132,7 @@
       manualEligible: true,
       segments: [
         count('Set 1', 8, 6.4, { announce: 'Bird dog. Set 1. Eight reps per side, alternating, with five-second holds.', holdSec: 5, alternatingSides: true }),
-        rest(60, { announce: 'Rest. Set 2 is next.' }),
         count('Set 2', 8, 6.4, { announce: 'Bird dog. Set 2. Eight reps per side, alternating, with five-second holds.', holdSec: 5, alternatingSides: true }),
-        rest(60, { announce: 'Rest. Set 3 is next.' }),
         count('Set 3', 8, 6.4, { announce: 'Bird dog. Set 3. Eight reps per side, alternating, with five-second holds.', holdSec: 5, alternatingSides: true })
       ]
     },
@@ -168,13 +144,9 @@
       manualEligible: true,
       segments: [
         hold('Right side, set 1', 25, { announce: 'Side plank from knees. Right side, set 1.' }),
-        rest(60, { announce: 'Rest. Left side, set 1 is next.' }),
         hold('Left side, set 1', 25, { announce: 'Side plank from knees. Left side, set 1.' }),
-        rest(60, { announce: 'Rest. Right side, set 2 is next.' }),
         hold('Right side, set 2', 25, { announce: 'Side plank from knees. Right side, set 2.' }),
-        rest(60, { announce: 'Rest. Left side, set 2 is next.' }),
         hold('Left side, set 2', 25, { announce: 'Side plank from knees. Left side, set 2.' }),
-        rest(60, { announce: 'Rest. Right side, set 3 is next.' }),
         hold('Right side, set 3', 25, { announce: 'Side plank from knees. Right side, set 3.' })
       ]
     },
@@ -186,17 +158,11 @@
       manualEligible: true,
       segments: [
         count('Right side, set 1', 12, 5.4, { announce: 'Lying dumbbell external rotation. Right side, set 1.', holdSec: 2 }),
-        rest(60, { announce: 'Rest. Left side, set 1 is next.' }),
         count('Left side, set 1', 12, 5.4, { announce: 'External rotation. Left side, set 1.', holdSec: 2 }),
-        rest(60, { announce: 'Rest. Right side, set 2 is next.' }),
         count('Right side, set 2', 12, 5.4, { announce: 'External rotation. Right side, set 2.', holdSec: 2 }),
-        rest(60, { announce: 'Rest. Left side, set 2 is next.' }),
         count('Left side, set 2', 12, 5.4, { announce: 'External rotation. Left side, set 2.', holdSec: 2 }),
-        rest(60, { announce: 'Rest. Right side, set 3 is next.' }),
         count('Right side, set 3', 12, 5.4, { announce: 'External rotation. Right side, set 3.', holdSec: 2 }),
-        rest(60, { announce: 'Rest. Left side, set 3 is next.' }),
         count('Left side, set 3', 12, 5.4, { announce: 'External rotation. Left side, set 3.', holdSec: 2 }),
-        rest(60, { announce: 'Rest. Right side, set 4 is next.' }),
         count('Right side, set 4', 12, 5.4, { announce: 'External rotation. Right side, set 4.', holdSec: 2 })
       ]
     }
