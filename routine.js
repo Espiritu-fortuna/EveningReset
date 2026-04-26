@@ -7,8 +7,8 @@
 
   const warmups = [
     { key: 'marching', phase: 'warmup', name: 'Light Marching in Place', cue: 'Raise tissue temperature without impact.', manualEligible: false, segments: [timed('Marching', 60, { announce: 'Warm-up. Light marching in place.' })] },
-    { key: 'breathing', phase: 'warmup', name: 'Diaphragmatic Breathing', cue: 'Four seconds in, six to eight out, belly expands.', manualEligible: false, segments: [breath('Ten breath cycles', 10, 4, 7, { announce: 'Diaphragmatic breathing. Ten slow breaths.' })] },
-    { key: 'chin-tucks', phase: 'warmup', name: 'Chin Tucks', cue: 'Slide the head back, no tilting, three-second hold.', manualEligible: false, segments: [count('Ten reps', 10, 4.4, { announce: 'Chin tucks.' })] },
+    { key: 'breathing', phase: 'warmup', name: 'Diaphragmatic Breathing', cue: 'Four seconds in, six seconds out, belly expands.', manualEligible: false, segments: [breath('Eight breath cycles', 8, 4, 6, { announce: 'Diaphragmatic breathing. Eight slow breaths.' })] },
+    { key: 'chin-tucks', phase: 'warmup', name: 'Chin Tucks', cue: 'Slide the head back, no tilting, three-second hold.', manualEligible: false, segments: [count('Ten reps', 10, 4.8, { announce: 'Chin tucks.', holdSec: 3 })] },
     { key: 'shoulder-rolls', phase: 'warmup', name: 'Shoulder Rolls', cue: 'Ten forward, ten backward.', manualEligible: false, segments: [count('Forward', 10, 1.3, { announce: 'Shoulder rolls forward.' }), count('Backward', 10, 1.3, { announce: 'Shoulder rolls backward.' })] }
   ];
 
@@ -20,11 +20,11 @@
       cue: 'Tiny chin nod. Mild right rotation after each hold, no pain.',
       manualEligible: true,
       segments: [
-        count('Set 1', 10, 11.2, { announce: 'Deep cervical flexor hold. Set 1. Ten second holds.' }),
+        count('Set 1', 10, 12.2, { announce: 'Deep cervical flexor hold. Set 1. Ten second holds.', holdSec: 10 }),
         rest(60, { announce: 'Rest. Set 2 is next.' }),
-        count('Set 2', 10, 11.2, { announce: 'Deep cervical flexor hold. Set 2.' }),
+        count('Set 2', 10, 12.2, { announce: 'Deep cervical flexor hold. Set 2.', holdSec: 10 }),
         rest(60, { announce: 'Rest. Set 3 is next.' }),
-        count('Set 3', 10, 11.2, { announce: 'Deep cervical flexor hold. Set 3.' })
+        count('Set 3', 10, 12.2, { announce: 'Deep cervical flexor hold. Set 3.', holdSec: 10 })
       ]
     },
     {
@@ -70,11 +70,11 @@
       cue: 'Extend over the roller, ribs down, five-second hold at the top.',
       manualEligible: true,
       segments: [
-        count('Lower thoracic level', 8, 5.8, { announce: 'Thoracic extension over foam roller. Lower thoracic level.' }),
+        count('Lower thoracic level', 8, 6.6, { announce: 'Thoracic extension over foam roller. Lower thoracic level.', holdSec: 5 }),
         rest(60, { announce: 'Rest. Mid thoracic level is next.' }),
-        count('Mid thoracic level', 8, 5.8, { announce: 'Thoracic extension. Mid thoracic level.' }),
+        count('Mid thoracic level', 8, 6.6, { announce: 'Thoracic extension. Mid thoracic level.', holdSec: 5 }),
         rest(60, { announce: 'Rest. Upper thoracic level is next.' }),
-        count('Upper thoracic level', 8, 5.8, { announce: 'Thoracic extension. Upper thoracic level.' })
+        count('Upper thoracic level', 8, 6.6, { announce: 'Thoracic extension. Upper thoracic level.', holdSec: 5 })
       ]
     },
     {
@@ -92,13 +92,13 @@
       cue: 'Knees stacked, follow the hand with the eyes, two-second hold open.',
       manualEligible: true,
       segments: [
-        count('Right side, set 1', 8, 4.0, { announce: 'Open book rotation. Right side, set 1.' }),
+        count('Right side, set 1', 8, 4.4, { announce: 'Open book rotation. Right side, set 1.', holdSec: 2 }),
         rest(60, { announce: 'Rest. Left side, set 1 is next.' }),
-        count('Left side, set 1', 8, 4.0, { announce: 'Open book rotation. Left side, set 1.' }),
+        count('Left side, set 1', 8, 4.4, { announce: 'Open book rotation. Left side, set 1.', holdSec: 2 }),
         rest(60, { announce: 'Rest. Right side, set 2 is next.' }),
-        count('Right side, set 2', 8, 4.0, { announce: 'Open book rotation. Right side, set 2.' }),
+        count('Right side, set 2', 8, 4.4, { announce: 'Open book rotation. Right side, set 2.', holdSec: 2 }),
         rest(60, { announce: 'Rest. Left side, set 2 is next.' }),
-        count('Left side, set 2', 8, 4.0, { announce: 'Open book rotation. Left side, set 2.' })
+        count('Left side, set 2', 8, 4.4, { announce: 'Open book rotation. Left side, set 2.', holdSec: 2 })
       ]
     },
     {
@@ -124,11 +124,11 @@
       cue: 'Tuck tailbone first, then lift. Three-second squeeze at the top.',
       manualEligible: true,
       segments: [
-        count('Set 1', 12, 4.5, { announce: 'Glute bridge with posterior pelvic tilt. Set 1.' }),
+        count('Set 1', 12, 4.9, { announce: 'Glute bridge with posterior pelvic tilt. Set 1.', holdSec: 3 }),
         rest(60, { announce: 'Rest. Set 2 is next.' }),
-        count('Set 2', 12, 4.5, { announce: 'Glute bridge. Set 2.' }),
+        count('Set 2', 12, 4.9, { announce: 'Glute bridge. Set 2.', holdSec: 3 }),
         rest(60, { announce: 'Rest. Set 3 is next.' }),
-        count('Set 3', 12, 4.5, { announce: 'Glute bridge. Set 3.' })
+        count('Set 3', 12, 4.9, { announce: 'Glute bridge. Set 3.', holdSec: 3 })
       ]
     },
     {
@@ -152,11 +152,11 @@
       cue: 'Brace first. Opposite arm and leg extend. Five-second hold with zero rotation.',
       manualEligible: true,
       segments: [
-        count('Set 1', 16, 6.0, { announce: 'Bird dog. Set 1. Eight per side with five-second holds.' }),
+        count('Set 1', 16, 6.4, { announce: 'Bird dog. Set 1. Eight per side with five-second holds.', holdSec: 5 }),
         rest(60, { announce: 'Rest. Set 2 is next.' }),
-        count('Set 2', 16, 6.0, { announce: 'Bird dog. Set 2.' }),
+        count('Set 2', 16, 6.4, { announce: 'Bird dog. Set 2.', holdSec: 5 }),
         rest(60, { announce: 'Rest. Set 3 is next.' }),
-        count('Set 3', 16, 6.0, { announce: 'Bird dog. Set 3.' })
+        count('Set 3', 16, 6.4, { announce: 'Bird dog. Set 3.', holdSec: 5 })
       ]
     },
     {
@@ -184,19 +184,19 @@
       cue: 'Elbow pinned to the hip, small clean motion, two-second hold and three-second lower.',
       manualEligible: true,
       segments: [
-        count('Right side, set 1', 12, 5.0, { announce: 'Lying dumbbell external rotation. Right side, set 1.' }),
+        count('Right side, set 1', 12, 5.4, { announce: 'Lying dumbbell external rotation. Right side, set 1.', holdSec: 2 }),
         rest(60, { announce: 'Rest. Left side, set 1 is next.' }),
-        count('Left side, set 1', 12, 5.0, { announce: 'External rotation. Left side, set 1.' }),
+        count('Left side, set 1', 12, 5.4, { announce: 'External rotation. Left side, set 1.', holdSec: 2 }),
         rest(60, { announce: 'Rest. Right side, set 2 is next.' }),
-        count('Right side, set 2', 12, 5.0, { announce: 'External rotation. Right side, set 2.' }),
+        count('Right side, set 2', 12, 5.4, { announce: 'External rotation. Right side, set 2.', holdSec: 2 }),
         rest(60, { announce: 'Rest. Left side, set 2 is next.' }),
-        count('Left side, set 2', 12, 5.0, { announce: 'External rotation. Left side, set 2.' }),
+        count('Left side, set 2', 12, 5.4, { announce: 'External rotation. Left side, set 2.', holdSec: 2 }),
         rest(60, { announce: 'Rest. Right side, set 3 is next.' }),
-        count('Right side, set 3', 12, 5.0, { announce: 'External rotation. Right side, set 3.' }),
+        count('Right side, set 3', 12, 5.4, { announce: 'External rotation. Right side, set 3.', holdSec: 2 }),
         rest(60, { announce: 'Rest. Left side, set 3 is next.' }),
-        count('Left side, set 3', 12, 5.0, { announce: 'External rotation. Left side, set 3.' }),
+        count('Left side, set 3', 12, 5.4, { announce: 'External rotation. Left side, set 3.', holdSec: 2 }),
         rest(60, { announce: 'Rest. Extra right-side set is next.' }),
-        count('Right side, extra set', 12, 5.0, { announce: 'External rotation. Extra right-side set.' })
+        count('Right side, extra set', 12, 5.4, { announce: 'External rotation. Extra right-side set.', holdSec: 2 })
       ]
     }
   ];
