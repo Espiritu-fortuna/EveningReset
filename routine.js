@@ -217,6 +217,7 @@
       {
         id: 'default-evening',
         name: 'Evening routine',
+        introSpeech: 'Evening routine. Starting with light marching in place.',
         note: 'Tissue prep, cervical work, thoracic opening, lumbar-pelvic-core finish.',
         summary: 'Warm-up plus 12 evening routine exercises.',
         warmups,
