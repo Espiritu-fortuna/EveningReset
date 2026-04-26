@@ -16,13 +16,14 @@ Pixel-first offline PWA for the evening routine.
 - evening-specific cervical, thoracic, lumbar, pelvic, and shoulder flow
 
 ## Routine asymmetry notes
-Some evening movements intentionally include extra work on one side.
+Some evening movements intentionally carry one additional normal set on one side.
+This is folded into the ordinary set flow, not called out as a special “extra” block during use.
 
-Current extra-side blocks in the live routine:
-- **Upper Trapezius Stretch**: extra set on the **left** side
-- **Levator Scapulae Stretch**: extra set on the **right** side
-- **Side Plank from Knees**: extra set on the **right** side
-- **Lying Dumbbell External Rotation**: extra set on the **right** side
+Current side-weighted blocks in the live routine:
+- **Upper Trapezius Stretch**: left side runs to set 3, right side to set 2
+- **Levator Scapulae Stretch**: right side runs to set 3, left side to set 2
+- **Side Plank from Knees**: right side runs to set 3, left side to set 2
+- **Lying Dumbbell External Rotation**: right side runs to set 4, left side to set 3
 
 ## Local use
 Open `index.html` through a static host or GitHub Pages, then install from Chrome on Pixel if desired.

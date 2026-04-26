@@ -60,8 +60,8 @@
         hold('Right side, set 2', 30, { announce: 'Levator scapulae stretch. Right side, set 2.' }),
         rest(60, { announce: 'Rest. Left side, set 2 is next.' }),
         hold('Left side, set 2', 30, { announce: 'Levator scapulae stretch. Left side, set 2.' }),
-        rest(60, { announce: 'Rest. Extra right-side set is next.' }),
-        hold('Right side, extra set', 30, { announce: 'Levator scapulae stretch. Extra set on the right side.' })
+        rest(60, { announce: 'Rest. Right side, set 3 is next.' }),
+        hold('Right side, set 3', 30, { announce: 'Levator scapulae stretch. Right side, set 3.' })
       ]
     },
     {
@@ -174,8 +174,8 @@
         hold('Right side, set 2', 25, { announce: 'Side plank from knees. Right side, set 2.' }),
         rest(60, { announce: 'Rest. Left side, set 2 is next.' }),
         hold('Left side, set 2', 25, { announce: 'Side plank from knees. Left side, set 2.' }),
-        rest(60, { announce: 'Rest. Extra right-side set is next.' }),
-        hold('Right side, extra set', 25, { announce: 'Side plank from knees. Extra right-side set.' })
+        rest(60, { announce: 'Rest. Right side, set 3 is next.' }),
+        hold('Right side, set 3', 25, { announce: 'Side plank from knees. Right side, set 3.' })
       ]
     },
     {
@@ -196,8 +196,8 @@
         count('Right side, set 3', 12, 5.4, { announce: 'External rotation. Right side, set 3.', holdSec: 2 }),
         rest(60, { announce: 'Rest. Left side, set 3 is next.' }),
         count('Left side, set 3', 12, 5.4, { announce: 'External rotation. Left side, set 3.', holdSec: 2 }),
-        rest(60, { announce: 'Rest. Extra right-side set is next.' }),
-        count('Right side, extra set', 12, 5.4, { announce: 'External rotation. Extra right-side set.', holdSec: 2 })
+        rest(60, { announce: 'Rest. Right side, set 4 is next.' }),
+        count('Right side, set 4', 12, 5.4, { announce: 'External rotation. Right side, set 4.', holdSec: 2 })
       ]
     }
   ];
