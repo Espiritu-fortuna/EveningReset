@@ -139,11 +139,11 @@
       cue: 'Lower back flat. Opposite arm and leg extend together. Exhale on extension.',
       manualEligible: true,
       segments: [
-        count('Set 1', 16, 3.8, { announce: 'Dead bug. Set 1. Eight reps per side, alternating.' }),
+        count('Set 1', 16, 3.8, { announce: 'Dead bug. Set 1. Sixteen total reps, alternating.' }),
         rest(60, { announce: 'Rest. Set 2 is next.' }),
-        count('Set 2', 16, 3.8, { announce: 'Dead bug. Set 2.' }),
+        count('Set 2', 16, 3.8, { announce: 'Dead bug. Set 2. Sixteen total reps, alternating.' }),
         rest(60, { announce: 'Rest. Set 3 is next.' }),
-        count('Set 3', 16, 3.8, { announce: 'Dead bug. Set 3.' })
+        count('Set 3', 16, 3.8, { announce: 'Dead bug. Set 3. Sixteen total reps, alternating.' })
       ]
     },
     {
@@ -153,11 +153,11 @@
       cue: 'Brace first. Opposite arm and leg extend. Five-second hold with zero rotation.',
       manualEligible: true,
       segments: [
-        count('Set 1', 16, 6.4, { announce: 'Bird dog. Set 1. Eight per side with five-second holds.', holdSec: 5 }),
+        count('Set 1', 16, 6.4, { announce: 'Bird dog. Set 1. Sixteen total reps, alternating, with five-second holds.', holdSec: 5 }),
         rest(60, { announce: 'Rest. Set 2 is next.' }),
-        count('Set 2', 16, 6.4, { announce: 'Bird dog. Set 2.', holdSec: 5 }),
+        count('Set 2', 16, 6.4, { announce: 'Bird dog. Set 2. Sixteen total reps, alternating, with five-second holds.', holdSec: 5 }),
         rest(60, { announce: 'Rest. Set 3 is next.' }),
-        count('Set 3', 16, 6.4, { announce: 'Bird dog. Set 3.', holdSec: 5 })
+        count('Set 3', 16, 6.4, { announce: 'Bird dog. Set 3. Sixteen total reps, alternating, with five-second holds.', holdSec: 5 })
       ]
     },
     {
