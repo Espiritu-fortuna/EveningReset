@@ -183,7 +183,7 @@
       {
         id: 'default-evening',
         name: 'Evening routine',
-        introSpeech: 'Evening routine. Starting with light marching in place.',
+        introSpeech: 'Evening routine. Tissue prep first, then the full reset.',
         note: 'Tissue prep, cervical work, thoracic opening, lumbar-pelvic-core finish.',
         summary: 'Warm-up plus 12 evening routine exercises.',
         warmups,
