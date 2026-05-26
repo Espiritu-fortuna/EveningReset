@@ -841,7 +841,6 @@ async function speak(text, cancel = true, rate = 1) {
   if (bundled) {
     return playBundled(bundled);
   }
-  if (app.audioManifest) return 0;
   if (!window.speechSynthesis) return 0;
   speechSynthesis.resume?.();
   return new Promise((resolve) => {
