@@ -102,7 +102,7 @@
       {
         id: 'default-evening',
         name: 'Evening routine',
-        introSpeech: 'Evening routine.',
+        introSpeech: 'Evening routine',
         note: 'Single evening reset flow with the six spec-sheet exercises only.',
         summary: 'Fixed 6-exercise evening reset.',
         warmups: [],
