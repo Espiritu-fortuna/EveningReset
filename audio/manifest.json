@@ -4,7 +4,7 @@
     "10 reps": "audio/phrases/10-reps.mp3",
     "8 breath cycles": "audio/phrases/8-breath-cycles.mp3",
     "Anchor the opposite hand, tilt ear away, gentle overpressure.": "audio/phrases/anchor-the-opposite-hand-tilt-ear-away-gentle-overpressure.mp3",
-    "Backward \u00b7 10 reps": "audio/phrases/backward-10-reps.mp3",
+    "Backward · 10 reps": "audio/phrases/backward-10-reps.mp3",
     "Bird Dog": "audio/phrases/bird-dog.mp3",
     "Bird dog. Set 1. Eight reps per side, alternating, with five-second holds.": "audio/phrases/bird-dog-set-1-eight-reps-per-side-alternating-with-five-second-holds.mp3",
     "Bird dog. Set 2. Eight reps per side, alternating, with five-second holds.": "audio/phrases/bird-dog-set-2-eight-reps-per-side-alternating-with-five-second-holds.mp3",
@@ -35,7 +35,7 @@
     "External rotation. Right side, set 3.": "audio/phrases/external-rotation-right-side-set-3.mp3",
     "External rotation. Right side, set 4.": "audio/phrases/external-rotation-right-side-set-4.mp3",
     "Foam roller lengthwise. Arms open. Relax and breathe.": "audio/phrases/foam-roller-lengthwise-arms-open-relax-and-breathe.mp3",
-    "Forward \u00b7 10 reps": "audio/phrases/forward-10-reps.mp3",
+    "Forward · 10 reps": "audio/phrases/forward-10-reps.mp3",
     "Four seconds in, six seconds out, belly expands.": "audio/phrases/four-seconds-in-six-seconds-out-belly-expands.mp3",
     "Glute Bridge with Posterior Pelvic Tilt": "audio/phrases/glute-bridge-with-posterior-pelvic-tilt.mp3",
     "Glute bridge with posterior pelvic tilt. Set 1.": "audio/phrases/glute-bridge-with-posterior-pelvic-tilt-set-1.mp3",
@@ -68,7 +68,7 @@
     "Lying Dumbbell External Rotation": "audio/phrases/lying-dumbbell-external-rotation.mp3",
     "Lying chest opener on the foam roller. Two minutes total.": "audio/phrases/lying-chest-opener-on-the-foam-roller-two-minutes-total.mp3",
     "Lying dumbbell external rotation. Right side, set 1.": "audio/phrases/lying-dumbbell-external-rotation-right-side-set-1.mp3",
-    "Marching \u00b7 60 sec": "audio/phrases/marching-60-sec.mp3",
+    "Marching · 60 sec": "audio/phrases/marching-60-sec.mp3",
     "Mid thoracic level": "audio/phrases/mid-thoracic-level.mp3",
     "Next: Bird Dog. Rest starts now.": "audio/phrases/next-bird-dog-rest-starts-now.mp3",
     "Next: Dead Bug. Rest starts now.": "audio/phrases/next-dead-bug-rest-starts-now.mp3",
@@ -125,7 +125,9 @@
     "Voice check. Smooth and steady.": "audio/phrases/voice-check-smooth-and-steady.mp3",
     "Warm-up complete. Next: Deep Cervical Flexor Hold.": "audio/phrases/warm-up-complete-next-deep-cervical-flexor-hold.mp3",
     "Warm-up plus 12 evening routine exercises.": "audio/phrases/warm-up-plus-12-evening-routine-exercises.mp3",
-    "Warm-up. Light marching in place.": "audio/phrases/warm-up-light-marching-in-place.mp3"
+    "Warm-up. Light marching in place.": "audio/phrases/warm-up-light-marching-in-place.mp3",
+    "Next: Deep Cervical Flexor Hold. Rest starts now.": "audio/phrases/next-deep-cervical-flexor-hold-rest-starts-now.mp3",
+    "Next: Upper Trap + Levator Stretch. Rest starts now.": "audio/phrases/next-upper-trap-levator-stretch-rest-starts-now.mp3"
   },
   "numbers": {
     "1": "audio/numbers/1.mp3",
