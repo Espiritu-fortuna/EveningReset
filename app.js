@@ -350,7 +350,7 @@ function waitForManualStart() {
   setPauseButtonState('manual');
   UI.phaseBadge.textContent = 'MANUAL';
   UI.currentLabel.textContent = 'Awaiting your tap';
-  UI.exerciseCue.textContent = 'Warm-ups auto-run. Main exercises wait for Next in manual mode.';
+  UI.exerciseCue.textContent = 'Manual mode waits for Next before each exercise starts.';
 }
 
 function startAwaitedManualExercise() {

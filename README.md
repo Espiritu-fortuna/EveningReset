@@ -1,6 +1,6 @@
 # EveningReset
 
-Pixel-first offline PWA for the evening routine.
+Pixel-first offline PWA for the fixed evening reset routine.
 
 ## Features
 - installable standalone PWA via GitHub Pages or local static hosting
@@ -13,17 +13,34 @@ Pixel-first offline PWA for the evening routine.
 - previous, pause/resume, next, restart-current, stop, and in-session jump
 - offline shell and bundled audio cached by the service worker
 - global and per-exercise pace controls
-- evening-specific cervical, thoracic, lumbar, pelvic, and shoulder flow
 
-## Routine asymmetry notes
-Some evening movements intentionally carry one additional normal set on one side.
-This is folded into the ordinary set flow, not called out as a special “extra” block during use.
+## Live routine
+Single repeated **Evening Reset** flow using only these 6 exercises:
+1. Diaphragmatic Breathing
+2. Deep Cervical Flexor Hold
+3. Upper Trap + Levator Stretch
+4. Thoracic Extension over Foam Roller
+5. Dead Bug
+6. Half-Kneeling Hip Flexor Stretch
 
-Current side-weighted blocks in the live routine:
-- **Upper Trapezius Stretch**: left side runs to set 3, right side to set 2
-- **Levator Scapulae Stretch**: right side runs to set 3, left side to set 2
-- **Side Plank from Knees**: right side runs to set 3, left side to set 2
-- **Lying Dumbbell External Rotation**: right side runs to set 4, left side to set 3
+## Timing targets from the current spec
+- Diaphragmatic Breathing — 3 min
+- Deep Cervical Flexor Hold — 5 min
+- Upper Trap + Levator Stretch — 6 min
+- Thoracic Extension over Foam Roller — 5 min
+- Dead Bug — 5 min
+- Half-Kneeling Hip Flexor Stretch — 4 min
+
+## Asymmetry notes
+The live routine preserves the side-weighted stretch pattern from the recommendation set:
+- **Upper Trapezius Stretch**: extra time on the **left**
+- **Levator Scapulae Stretch**: extra time on the **right**
+
+## Scope rule
+- no day selector
+- no week gating
+- no daily recommendations inside the app
+- exercise flow only
 
 ## Local use
 Open `index.html` through a static host or GitHub Pages, then install from Chrome on Pixel if desired.
