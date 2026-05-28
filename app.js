@@ -436,14 +436,10 @@ async function runCountSegment(exercise, segment, token) {
       UI.timerUnit.textContent = side ? side.toUpperCase() : 'REPS';
       UI.currentLabel.textContent = side ? `${baseLabel} · ${side}` : baseLabel;
       if (alternatingSides) {
+        const alternatingCue = side ? `${rep} ${side}` : String(rep);
+        await speak(alternatingCue, true, 1.02);
         if (segment.holdSec) {
-          await speak(String(rep), true, 1.05);
-          ensureAlive(token);
-          await waitMs(REP_SIDE_GAP_MS, token);
-          await speak(side || '', true, 1.02);
           await runRepHold(segment, token);
-        } else {
-          await speak(side || '', true, 1.02);
         }
       } else if (segment.holdSec) {
         await speak(String(rep), true, 1.05);
