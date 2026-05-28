@@ -426,9 +426,21 @@ async function runCountSegment(exercise, segment, token) {
   const fixedSide = segment.side || null;
   const sides = alternatingSides ? ['Left', 'Right'] : [fixedSide];
   const baseLabel = segment.label || exercise.name;
+  const repNumberDelayMs = alternatingSides ? Math.max(0, Math.round((segment.repNumberDelaySec || 0) * 1000)) : 0;
   syncHoldDisplay(segment);
   clearHoldCounter();
   for (let rep = 1; rep <= segment.reps; rep++) {
+    if (alternatingSides) {
+      if (rep > 1 && repNumberDelayMs > 0) {
+        await waitMs(repNumberDelayMs, token);
+      }
+      UI.timerNumber.textContent = String(rep);
+      UI.timerUnit.textContent = 'LEFT';
+      UI.currentLabel.textContent = `${baseLabel} · Left`;
+      await speak(String(rep), true, 1.05);
+      ensureAlive(token);
+      await waitMs(REP_SIDE_GAP_MS, token);
+    }
     for (let sideIndex = 0; sideIndex < sides.length; sideIndex += 1) {
       const side = sides[sideIndex];
       ensureAlive(token);
@@ -437,11 +449,6 @@ async function runCountSegment(exercise, segment, token) {
       UI.timerUnit.textContent = side ? side.toUpperCase() : 'REPS';
       UI.currentLabel.textContent = side ? `${baseLabel} · ${side}` : baseLabel;
       if (alternatingSides) {
-        if (sideIndex === 0) {
-          await speak(String(rep), true, 1.05);
-          ensureAlive(token);
-          await waitMs(REP_SIDE_GAP_MS, token);
-        }
         await speak(side || '', true, 1.02);
         if (segment.holdSec) {
           await runRepHold(segment, token);
