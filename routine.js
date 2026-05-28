@@ -67,9 +67,9 @@
       cue: 'Lower back flat. Opposite arm and leg extend together. Exhale on extension.',
       manualEligible: true,
       segments: [
-        count('Set 1', 10, 5, { announce: 'Dead bug. Set 1. Ten reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 2 }),
-        count('Set 2', 10, 5, { announce: 'Dead bug. Set 2. Ten reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 2 }),
-        count('Set 3', 10, 5, { announce: 'Dead bug. Set 3. Ten reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 2 })
+        count('Set 1', 10, 5, { announce: 'Dead bug. Set 1. Ten reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 1 }),
+        count('Set 2', 10, 5, { announce: 'Dead bug. Set 2. Ten reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 1 }),
+        count('Set 3', 10, 5, { announce: 'Dead bug. Set 3. Ten reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 1 })
       ]
     },
     {
