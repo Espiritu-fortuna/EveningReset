@@ -429,15 +429,20 @@ async function runCountSegment(exercise, segment, token) {
   syncHoldDisplay(segment);
   clearHoldCounter();
   for (let rep = 1; rep <= segment.reps; rep++) {
-    for (const side of sides) {
+    for (let sideIndex = 0; sideIndex < sides.length; sideIndex += 1) {
+      const side = sides[sideIndex];
       ensureAlive(token);
       const repStartedAt = Date.now();
       UI.timerNumber.textContent = String(rep);
       UI.timerUnit.textContent = side ? side.toUpperCase() : 'REPS';
       UI.currentLabel.textContent = side ? `${baseLabel} · ${side}` : baseLabel;
       if (alternatingSides) {
-        const alternatingCue = side ? `${rep} ${side}` : String(rep);
-        await speak(alternatingCue, true, 1.02);
+        if (sideIndex === 0) {
+          await speak(String(rep), true, 1.05);
+          ensureAlive(token);
+          await waitMs(REP_SIDE_GAP_MS, token);
+        }
+        await speak(side || '', true, 1.02);
         if (segment.holdSec) {
           await runRepHold(segment, token);
         }
