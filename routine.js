@@ -10,54 +10,49 @@
       key: 'breathing',
       phase: 'main',
       name: 'Diaphragmatic Breathing',
-      cue: 'Slow nasal inhale, long controlled exhale, belly expands first.',
+      cue: 'Lying on back, knees bent. Lower back flat. Belly expands, chest stays still.',
       manualEligible: true,
-      segments: [breath('18 breath cycles', 18, 5, 5, { announce: 'Diaphragmatic Breathing' })]
+      segments: [breath('12 breath cycles', 12, 4, 8, { announce: 'Diaphragmatic Breathing' })]
     },
     {
       key: 'deep-cervical-flexor-hold',
       phase: 'main',
       name: 'Deep Cervical Flexor Hold',
-      cue: 'Tiny chin nod. Mild right rotation after each set, no pain.',
+      cue: 'Tiny chin nod like holding a grape. Add gentle right rotation after each hold. No surface-neck strain.',
       manualEligible: true,
       segments: [
-        count('Set 1', 5, 14, { announce: 'Deep cervical flexor hold. Set 1. Ten second holds.', holdSec: 10 }),
-        hold('Right rotation after set 1', 30, { announce: 'Tiny chin nod. Mild right rotation after each hold, no pain.' }),
-        count('Set 2', 5, 14, { announce: 'Deep cervical flexor hold. Set 2.', holdSec: 10 }),
-        hold('Right rotation after set 2', 30, { announce: 'Tiny chin nod. Mild right rotation after each hold, no pain.' }),
-        count('Set 3', 5, 14, { announce: 'Deep cervical flexor hold. Set 3.', holdSec: 10 }),
-        hold('Right rotation after set 3', 30, { announce: 'Tiny chin nod. Mild right rotation after each hold, no pain.' })
+        count('Set 1', 10, 10, { announce: 'Deep cervical flexor hold. Set 1. Ten second holds.', holdSec: 10 }),
+        count('Set 2', 10, 10, { announce: 'Deep cervical flexor hold. Set 2.', holdSec: 10 }),
+        count('Set 3', 10, 10, { announce: 'Deep cervical flexor hold. Set 3.', holdSec: 10 })
       ]
     },
     {
       key: 'upper-trap-levator-stretch',
       phase: 'main',
-      name: 'Upper Trap + Levator Stretch',
-      cue: 'Upper trap first, then levator. Mild tension only. Keep the anchored shoulder down.',
+      name: 'Upper Trap + Levator Work',
+      cue: 'Right upper trap stretch only. Left upper trap is active release: shrug, then drop down-and-back. Mild tension only.',
       manualEligible: true,
       segments: [
-        hold('Upper trap · right side · set 1', 36, { announce: 'Upper trapezius stretch. Right side, set 1.' }),
-        hold('Upper trap · left side · set 1', 36, { announce: 'Upper trapezius stretch. Left side, set 1.' }),
-        hold('Upper trap · right side · set 2', 36, { announce: 'Upper trapezius stretch. Right side, set 2.' }),
-        hold('Upper trap · left side · set 2', 36, { announce: 'Upper trapezius stretch. Left side, set 2.' }),
-        hold('Upper trap · left side · extra set', 36, { announce: 'Upper trapezius stretch. Extra set on the left side.' }),
-        hold('Levator · right side · set 1', 36, { announce: 'Levator scapulae stretch. Right side, set 1.' }),
-        hold('Levator · left side · set 1', 36, { announce: 'Levator scapulae stretch. Left side, set 1.' }),
-        hold('Levator · right side · set 2', 36, { announce: 'Levator scapulae stretch. Right side, set 2.' }),
-        hold('Levator · left side · set 2', 36, { announce: 'Levator scapulae stretch. Left side, set 2.' }),
-        hold('Levator · right side · extra set', 36, { announce: 'Levator scapulae stretch. Right side, set 3.' })
+        hold('Right upper trap · set 1', 30, { announce: 'Upper trapezius stretch. Right side, set 1.' }),
+        hold('Right upper trap · set 2', 30, { announce: 'Upper trapezius stretch. Right side, set 2.' }),
+        count('Left upper trap active release', 10, 4, { announce: 'Left upper trap active release. Shrug up, then drop down and back. No head tilt.' }),
+        hold('Levator · right side · set 1', 30, { announce: 'Levator scapulae stretch. Right side, set 1.' }),
+        hold('Levator · left side · set 1', 30, { announce: 'Levator scapulae stretch. Left side, set 1.' }),
+        hold('Levator · right side · set 2', 30, { announce: 'Levator scapulae stretch. Right side, set 2.' }),
+        hold('Levator · left side · set 2', 30, { announce: 'Levator scapulae stretch. Left side, set 2.' }),
+        hold('Levator · right side · extra set', 30, { announce: 'Levator scapulae stretch. Right side, set 3.' })
       ]
     },
     {
       key: 'thoracic-extension-foam-roller',
       phase: 'main',
       name: 'Thoracic Extension over Foam Roller',
-      cue: 'Extend over the roller, ribs down, five-second hold at the top.',
+      cue: 'Support head with hands. Extend from mid-back over roller, ribs down, neck relaxed.',
       manualEligible: true,
       segments: [
-        count('Lower thoracic level', 10, 10, { announce: 'Thoracic extension over foam roller. Lower thoracic level.', holdSec: 5 }),
-        count('Mid thoracic level', 10, 10, { announce: 'Thoracic extension. Mid thoracic level.', holdSec: 5 }),
-        count('Upper thoracic level', 10, 10, { announce: 'Thoracic extension. Upper thoracic level.', holdSec: 5 })
+        count('Lower thoracic level', 8, 10, { announce: 'Thoracic extension over foam roller. Lower thoracic level.', holdSec: 5 }),
+        count('Mid thoracic level', 8, 10, { announce: 'Thoracic extension. Mid thoracic level.', holdSec: 5 }),
+        count('Upper thoracic level', 8, 10, { announce: 'Thoracic extension. Upper thoracic level.', holdSec: 5 })
       ]
     },
     {
@@ -67,22 +62,34 @@
       cue: 'Lower back flat. Opposite arm and leg extend together. Exhale on extension.',
       manualEligible: true,
       segments: [
-        count('Set 1', 10, 5, { announce: 'Dead bug. Set 1. Ten reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 1 }),
-        count('Set 2', 10, 5, { announce: 'Dead bug. Set 2. Ten reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 1 }),
-        count('Set 3', 10, 5, { announce: 'Dead bug. Set 3. Ten reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 1 })
+        count('Set 1', 8, 5, { announce: 'Dead bug. Set 1. Eight reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 1 }),
+        count('Set 2', 8, 5, { announce: 'Dead bug. Set 2. Eight reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 1 }),
+        count('Set 3', 8, 5, { announce: 'Dead bug. Set 3. Eight reps per side, alternating.', alternatingSides: true, repNumberDelaySec: 1 })
+      ]
+    },
+    {
+      key: 'glute-bridge',
+      phase: 'main',
+      name: 'Glute Bridge',
+      cue: 'Tuck tailbone first, then lift. Drive through heels. Three-second glute squeeze, no back arch.',
+      manualEligible: true,
+      segments: [
+        count('Set 1', 12, 6, { announce: 'Glute bridge with posterior pelvic tilt. Set 1.', holdSec: 3 }),
+        count('Set 2', 12, 6, { announce: 'Glute bridge. Set 2.', holdSec: 3 }),
+        count('Set 3', 12, 6, { announce: 'Glute bridge. Set 3.', holdSec: 3 })
       ]
     },
     {
       key: 'hip-flexor-stretch',
       phase: 'main',
-      name: 'Half-Kneeling Hip Flexor Stretch',
-      cue: 'Tuck tailbone first. Squeeze the back-leg glute. Shift hips forward.',
+      name: 'Kneeling Hip Flexor Stretch',
+      cue: 'Tuck tailbone, squeeze back-leg glute, chest tall. Same-side arm overhead; use the standing version if kneeling makes you round.',
       manualEligible: true,
       segments: [
-        hold('Right side, set 1', 60, { announce: 'Half-kneeling hip flexor stretch. Right side, set 1.' }),
-        hold('Left side, set 1', 60, { announce: 'Half-kneeling hip flexor stretch. Left side, set 1.' }),
-        hold('Right side, set 2', 60, { announce: 'Half-kneeling hip flexor stretch. Right side, set 2.' }),
-        hold('Left side, set 2', 60, { announce: 'Half-kneeling hip flexor stretch. Left side, set 2.' })
+        hold('Right side, set 1', 45, { announce: 'Half-kneeling hip flexor stretch. Right side, set 1.' }),
+        hold('Left side, set 1', 45, { announce: 'Half-kneeling hip flexor stretch. Left side, set 1.' }),
+        hold('Right side, set 2', 45, { announce: 'Half-kneeling hip flexor stretch. Right side, set 2.' }),
+        hold('Left side, set 2', 45, { announce: 'Half-kneeling hip flexor stretch. Left side, set 2.' })
       ]
     }
   ];
@@ -93,18 +100,19 @@
     shortName: 'Evening',
     themeColor: '#05070b',
     subtitle: 'Same evening every day',
-    headerSubtitle: 'Daily evening reset',
+    headerSubtitle: '7 exercises · 5 days per week',
+    routineVersion: 'v4-recovery-plan',
     introLeadInSec: 5,
     announcementDelaySec: 2,
     defaultGlobalPace: 1,
-    defaultRestSec: 60,
+    defaultRestSec: 15,
     presets: [
       {
         id: 'default-evening',
-        name: 'Evening routine',
+        name: 'Evening Reset V4',
         introSpeech: 'Evening routine',
-        note: 'Single evening reset flow with the six spec-sheet exercises only.',
-        summary: 'Fixed 6-exercise evening reset.',
+        note: 'Recovery plan: cervical reset, thoracic extension, dead bug, glute bridge, and hip flexor release.',
+        summary: 'Exercise-only recovery plan · adjustable pace · 5 days per week.',
         warmups: [],
         exercises
       }

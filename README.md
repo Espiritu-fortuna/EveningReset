@@ -1,6 +1,6 @@
 # EveningReset
 
-Pixel-first offline PWA for the fixed evening reset routine.
+Pixel-first offline PWA for the fixed Evening Reset V4 recovery plan.
 
 ## Features
 - installable standalone PWA via GitHub Pages or local static hosting
@@ -15,32 +15,28 @@ Pixel-first offline PWA for the fixed evening reset routine.
 - global and per-exercise pace controls
 
 ## Live routine
-Single repeated **Evening Reset** flow using only these 6 exercises:
+Single repeated **Evening Reset V4** flow using these 7 exercises:
 1. Diaphragmatic Breathing
 2. Deep Cervical Flexor Hold
-3. Upper Trap + Levator Stretch
+3. Upper Trap + Levator Work
 4. Thoracic Extension over Foam Roller
 5. Dead Bug
-6. Half-Kneeling Hip Flexor Stretch
+6. Glute Bridge
+7. Kneeling Hip Flexor Stretch
 
-## Timing targets from the current spec
-- Diaphragmatic Breathing — 3 min
-- Deep Cervical Flexor Hold — 5 min
-- Upper Trap + Levator Stretch — 6 min
-- Thoracic Extension over Foam Roller — 5 min
-- Dead Bug — 5 min
-- Half-Kneeling Hip Flexor Stretch — 4 min
+## Timing rule
+The app preserves the prescribed reps, holds, sides, and form cues. The printed minute labels are treated as approximate because voice prompts, setup pauses, transition rests, and user-adjusted pace settings deliberately change the real session length.
 
 ## Asymmetry notes
-The live routine preserves the side-weighted stretch pattern from the recommendation set:
-- **Upper Trapezius Stretch**: extra time on the **left**
-- **Levator Scapulae Stretch**: extra time on the **right**
+The live routine preserves the side-weighted stretch pattern from the exercise spec:
+- **Upper Trapezius**: right side gets the stretch; left side uses active release only
+- **Levator Scapulae**: right side gets one extra set
 
 ## Scope rule
 - no day selector
 - no week gating
-- no daily recommendations inside the app
-- exercise flow only
+- exercise-only routine; Daily Recommendations are intentionally excluded
+- default transition rest is 15 seconds and can be lowered to 0 seconds
 
 ## Local use
 Open `index.html` through a static host or GitHub Pages, then install from Chrome on Pixel if desired.

@@ -94,6 +94,7 @@ const app = {
 init();
 
 async function init() {
+  applyRoutineMigration();
   UI.brandName.textContent = CFG.brandLabel || CFG.appName;
   UI.brandSubtitle.textContent = CFG.headerSubtitle || CFG.subtitle || 'Guided routine';
   populatePresets();
@@ -118,6 +119,24 @@ function populatePresets() {
     UI.presetSelect.appendChild(opt);
   });
   UI.presetSelect.value = app.selectedPresetId;
+}
+
+function applyRoutineMigration() {
+  const version = CFG.routineVersion || 'default';
+  const versionKey = storageKey('routineVersion');
+  if (localStorage.getItem(versionKey) === version) return;
+
+  app.globalRestSec = Number.isFinite(CFG.defaultRestSec) ? CFG.defaultRestSec : 0;
+  persist('globalRestSec', app.globalRestSec);
+
+  const allExercises = (CFG.presets || []).flatMap((preset) => [
+    ...(preset.warmups || []),
+    ...(preset.exercises || [])
+  ]);
+  allExercises.forEach((exercise) => {
+    if (exercise?.key) localStorage.removeItem(storageKey(`pace:${exercise.key}`));
+  });
+  localStorage.setItem(versionKey, version);
 }
 
 function bindHome() {
@@ -254,8 +273,9 @@ function buildTimeline(preset) {
   for (let i = 0; i < base.length - 1; i += 1) {
     const current = base[i];
     const next = base[i + 1];
-    if (current.phase === 'main' && next.phase === 'main') {
-      current.segments.push({ type: 'rest', durationSec: app.globalRestSec || CFG.defaultRestSec || 60, label: 'Exercise break', announce: `Next: ${next.name}. Rest starts now.` });
+    const restSec = Number.isFinite(app.globalRestSec) ? app.globalRestSec : (CFG.defaultRestSec || 0);
+    if (current.phase === 'main' && next.phase === 'main' && restSec > 0) {
+      current.segments.push({ type: 'rest', durationSec: restSec, label: 'Exercise break', announce: `Next: ${next.name}. Rest starts now.` });
     }
   }
   return base;

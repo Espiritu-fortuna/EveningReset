@@ -1,12 +1,13 @@
 :root {
-  --bg: #090704;
-  --surface: #14100a;
-  --surface-2: #20170c;
-  --text: #f8efd2;
-  --muted: #bea76b;
-  --line: rgba(244, 197, 66, 0.14);
-  --brand: #f4c542;
-  --brand-2: #d8a81d;
+  --bg: #080a08;
+  --surface: #111711;
+  --surface-2: #1b2119;
+  --text: #f5f0df;
+  --muted: #a9b9a8;
+  --line: rgba(145, 203, 165, 0.18);
+  --brand: #8bd8a8;
+  --brand-2: #f2c766;
+  --success: #72dfa0;
   --danger: #ff8972;
   --radius: 16px;
   --shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
