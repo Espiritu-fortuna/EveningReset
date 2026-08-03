@@ -82,14 +82,14 @@
     {
       key: 'hip-flexor-stretch',
       phase: 'main',
-      name: 'Kneeling Hip Flexor Stretch',
-      cue: 'Tuck tailbone, squeeze back-leg glute, chest tall. Same-side arm overhead; use the standing version if kneeling makes you round.',
+      name: "World's Greatest Stretch",
+      cue: 'Half-lunge with the back leg extended and front knee near 90 degrees. Tuck tailbone first and squeeze the back-leg glute. Reach the back-leg-side arm overhead, then gently lean to the opposite side. Keep ribs down.',
       manualEligible: true,
       segments: [
-        hold('Right side, set 1', 45, { announce: 'Half-kneeling hip flexor stretch. Right side, set 1.' }),
-        hold('Left side, set 1', 45, { announce: 'Half-kneeling hip flexor stretch. Left side, set 1.' }),
-        hold('Right side, set 2', 45, { announce: 'Half-kneeling hip flexor stretch. Right side, set 2.' }),
-        hold('Left side, set 2', 45, { announce: 'Half-kneeling hip flexor stretch. Left side, set 2.' })
+        hold('Right side, set 1', 60, { announce: "World's Greatest Stretch. Right side, set 1." }),
+        hold('Left side, set 1', 60, { announce: "World's Greatest Stretch. Left side, set 1." }),
+        hold('Right side, set 2', 60, { announce: "World's Greatest Stretch. Right side, set 2." }),
+        hold('Left side, set 2', 60, { announce: "World's Greatest Stretch. Left side, set 2." })
       ]
     }
   ];

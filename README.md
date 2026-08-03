@@ -22,7 +22,7 @@ Single repeated **Evening Reset V4** flow using these 7 exercises:
 4. Thoracic Extension over Foam Roller
 5. Dead Bug
 6. Glute Bridge
-7. Kneeling Hip Flexor Stretch
+7. World's Greatest Stretch — 4 minutes (2 × 60 seconds per side)
 
 ## Timing rule
 The app preserves the prescribed reps, holds, sides, and form cues. The printed minute labels are treated as approximate because voice prompts, setup pauses, transition rests, and user-adjusted pace settings deliberately change the real session length.

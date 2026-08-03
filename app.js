@@ -111,6 +111,7 @@ function populatePresets() {
     UI.presetPanel.classList.add('hidden');
     return;
   }
+  UI.presetPanel.classList.remove('hidden');
   UI.presetSelect.innerHTML = '';
   CFG.presets.forEach((preset) => {
     const opt = document.createElement('option');

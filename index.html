@@ -9,6 +9,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="EveningReset" />
   <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,7 +18,7 @@
     <header class="topbar">
       <div>
         <div class="brand" id="brand-name">☾ EVENING RESET</div>
-        <div class="subbrand" id="brand-subtitle">Daily evening reset</div>
+        <div class="subbrand" id="brand-subtitle">7 exercises · 5 days per week</div>
       </div>
       <button class="ghost-btn icon-btn hidden" id="open-jump-btn" type="button" title="Jump">☰</button>
     </header>
@@ -26,12 +27,12 @@
       <section id="home-view" class="view active">
         <div class="hero-card compact-hero">
           <div class="eyebrow">OFFLINE ROUTINE</div>
-          <h1 id="routine-title">Evening routine</h1>
-          <p id="routine-summary">Large-text, voice-guided training flow.</p>
+          <h1 id="routine-title">Evening Reset V4</h1>
+          <p id="routine-summary">Exercise-only recovery plan · adjustable pace · 5 days per week.</p>
           <button id="start-btn" class="primary-btn hero-start" type="button">▶ Start session</button>
         </div>
 
-        <details class="panel detail-panel" id="preset-panel" open>
+        <details class="panel detail-panel hidden" id="preset-panel" open>
           <summary>
             <span>Routine</span>
             <span class="detail-kicker">Preset</span>
